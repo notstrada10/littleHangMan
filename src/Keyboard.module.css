@@ -22,3 +22,63 @@
 .btn:hover:not(:disabled), .btn:focus:not(:disabled) {
     background: hsl(200, 100%, 75%);
 }
+
+.keyboardGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+        "q w e r t y u i o p"
+        ". a s d f g h j k l"
+        ". z x c v b n m . .";
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.btn.active {
+    background-color: green;
+    color: white;
+}
+
+.btn.inactive {
+    background-color: red;
+    color: white;
+}
+
+.q { grid-area: q; }
+.w { grid-area: w; }
+.e { grid-area: e; }
+.r { grid-area: r; }
+.t { grid-area: t; }
+.y { grid-area: y; }
+.u { grid-area: u; }
+.i { grid-area: i; }
+.o { grid-area: o; }
+.p { grid-area: p; }
+
+.a { grid-area: a; }
+.s { grid-area: s; }
+.d { grid-area: d; }
+.f { grid-area: f; }
+.g { grid-area: g; }
+.h { grid-area: h; }
+.j { grid-area: j; }
+.k { grid-area: k; }
+.l { grid-area: l; }
+
+.z { grid-area: z; }
+.x { grid-area: x; }
+.c { grid-area: c; }
+.v { grid-area: v; }
+.b { grid-area: b; }
+.n { grid-area: n; }
+.m { grid-area: m; }
