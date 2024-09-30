@@ -3,8 +3,6 @@ type HangmanWordProps = {
     wordToGuess: string;
 }
 
-const word = "hello";
-const guessedLetters = ["h", "l"];
 
 export function HangManWord({ guessedLetters, wordToGuess }: HangmanWordProps) {
     return (
