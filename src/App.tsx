@@ -10,6 +10,7 @@ function App() {
   })
 
   const [guessedLetters, setGuessedLetters] = useState<string[]>([])
+  const incorrectLetters = guessedLetters.filter(letter => !workToGuess.includes(letter))
 
   return (
   <div style={{
@@ -24,9 +25,11 @@ function App() {
       Lose
       Win
     </div>
-    <HangManDrawing />
+    <HangManDrawing numberOfGuesses={incorrectLetters.length} />
     <HangManWord />
+    <div style={{ alignSelf: "stretch" }}>
     <Keyboard />
+    </div>
   </div>
   )
 }
