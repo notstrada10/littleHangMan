@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Little HangMan!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Little Hangman is a fun and interactive web application that brings back the nostalgia of the classic hangman game we all enjoyed in our childhood. This modern version allows players to guess a hidden word one letter at a time, testing their vocabulary and logic. With each incorrect guess, a new part of the stick figure is drawn—head, body, arms, and legs—until the entire hangman is complete.
 
-Currently, two official plugins are available:
+The game offers an engaging way to challenge yourself or compete with friends to see who can guess the word with the fewest mistakes. Whether you're playing for fun or trying to improve your language skills, Little Hangman is designed to be accessible and enjoyable for all ages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Installation 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the repository:**
+  ```sh
+  git clone https://github.com/notstrada10/littleHangMan.git
+  cd littleHangMan
+  ```
 
-- Configure the top-level `parserOptions` property like this:
+2. **Install dependencies:**
+  ```sh
+  npm install
+  ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Start the development server:**
+    ```sh
+    npm run dev
+    ```
+    By default, the server runs on `PORT 3000` and `HOST 127.0.0.1`. You can change these by setting the `PORT` and `HOST` environment variables in your `.env` file.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Build the project and launch on your enviroment:**
+    ```sh
+    npm run build
+    ```
+3. **When launched, navigate to :**
+    Open your browser and go to http://HOST/ and take a look at the docs
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ## Scripts
+
+- `npm install`: Installs the project dependencies.
+- `npm run dev`: Starts the development server with `nodemon`.
+- `npm run build`: Builds the project for production.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
+
+## License
+This project is licensed under the MIT License.
