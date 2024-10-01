@@ -1,6 +1,11 @@
 # Little HangMan!
 
-## Overview
+![HangMan Game](https://media.istockphoto.com/id/1196954772/vector/simple-illustration-of-hangman-game.jpg?s=612x612&w=0&k=20&c=Z_Sxdqu4i100u0qeSsVdX_M--VoXgPISK83gBJCf3LM=)
+
+
+
+## Overview
+
 Little Hangman is a fun and interactive web application that brings back the nostalgia of the classic hangman game we all enjoyed in our childhood. This modern version allows players to guess a hidden word one letter at a time, testing their vocabulary and logic. With each incorrect guess, a new part of the stick figure is drawn—head, body, arms, and legs—until the entire hangman is complete.
 
 The game offers an engaging way to challenge yourself or compete with friends to see who can guess the word with the fewest mistakes. Whether you're playing for fun or trying to improve your language skills, Little Hangman is designed to be accessible and enjoyable for all ages.
