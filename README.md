@@ -25,7 +25,7 @@ The game offers an engaging way to challenge yourself or compete with friends to
     ```sh
     npm run dev
     ```
-    By default, the server runs on `PORT 3000` and `HOST 127.0.0.1`. You can change these by setting the `PORT` and `HOST` environment variables in your `.env` file.
+    and open on the link on your browser (in local)
 
 2. **Build the project and launch on your enviroment:**
     ```sh
