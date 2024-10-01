@@ -66,8 +66,14 @@ function App() {
       }}
     >
       <div style={{ fontSize: "2rem" }}>
-        {isWinner && "Winner! Refresh to try again"}
-        {isLoser && "Loser! Try again!"}
+        {isWinner && "Winner! Refresh to try again!"}
+        {isLoser && (
+        <>
+          <div style={{ textAlign: "center" }}>Loser! Try again!</div>
+          <div style={{ fontWeight: "bold" }}>The correct word is: {wordToGuess.toUpperCase()}</div>
+        </>
+      )}
+        
       </div>
       <HangManDrawing numberOfGuesses={incorrectLetters.length} />
       <HangManWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
